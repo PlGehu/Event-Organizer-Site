@@ -40,14 +40,14 @@ nav {
 
 .logo1 {
     width: 700px;
-    height: 400px;
+    height: 350px;
     background-color: #d2d2d2;
     
 }
 
 .logo-outline {
     width: 700px;
-    height: 400px;
+    height: 350px;
     display: inline-block;
     outline: 2px solid black; /* Add black outline to the logo */
 }
