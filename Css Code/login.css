@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden; /* Prevent scrolling */
+}
+
+nav {
+    background-color: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid black;
+    font-weight: bold;
+    cursor: pointer; /* Add cursor pointer for the arrow/button */
+}
+
+.arrow:hover {
+    background-color: white; /* Hover effect color */
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    background-color: #d2d2d2;
+    outline: 2px solid black; /* Add black outline to the logo */
+    /* Remove background color for the logo */
+}
+
+.logo1 {
+    width: 700px;
+    height: 400px;
+    background-color: #d2d2d2;
+    
+}
+
+.logo-outline {
+    width: 700px;
+    height: 400px;
+    display: inline-block;
+    outline: 2px solid black; /* Add black outline to the logo */
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    background-color: #ffffff;
+    padding: 50px;
+    margin-top: 2px;
+    text-align: center; /* Center the text in the right section */
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(0, 255, 238);
+    padding: 50px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 18px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+a {
+    font-size: 18px;
+    color: blue;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    
+    padding: 18px 36px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    position: relative; /* Add relative positioning */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+button:hover {
+    background-color: white; /* Hover effect color */
+    color: rgb(0, 0, 0); /* Black font color on hover */
+    font-weight: bold;
+    
+}
+
+button span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white; /* Hover effect color */
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover span {
+    transform: scaleX(1);
+    transform-origin: left;
+}
