@@ -8,7 +8,7 @@
 
 /* Navbar styles */
 .navbar {
-    background-color: white; /* Set header background color to white */
+    background-color: skyblue;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,9 +34,8 @@
 
 .website-name h1 {
     font-weight: bold;
-    color: #ffffff;
+    color: #000000;
     font-size: 22px; /* Decreased font size */
-    -webkit-text-stroke: 2px rgb(0, 0, 0); /* Added black outline on the font */
 }
 
 /* Welcome section styles */
@@ -75,13 +74,13 @@
     flex-direction: column;
     align-items: center;
     gap: 15px; /* Increased gap */
-    padding: 20px;
+    padding: 85px;
 }
 
 button {
     border: 2px solid #000;
     padding: 25px; /* Increased padding */
-    background-color: #f5f5f5; /* Light white color */
+    background-color: rgb(0, 255, 238);
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-out; /* Added color transition */
     font-size: 24px; /* Increased font size */
     width: 400px; /* Increased width */
@@ -90,21 +89,19 @@ button {
 
 button:hover {
     background-color: #000000; /* Sea blue hover color */
-    color: rgb(255, 255, 255); /* Black font color on hover */
+    color: rgb(255, 255, 255);
     transform: scale(1.05); /* Scale effect on hover */
 }
 
 .signup-button,
-.login-button,
-.event-organizer-button,
-.event-organizer-login-button {
+.event-organizer-button {
     font-weight: bold;
     color: #000000;
 }
 
 /* Footer styles */
 footer {
-    background-color: rgb(255, 255, 255); /* Set footer background color to white */
+    background-color: skyblue;
     text-align: center;
     padding: 25px; /* Increased padding */
     position: fixed;
